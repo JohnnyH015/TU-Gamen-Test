@@ -12,9 +12,10 @@ GameObject:
   - 65: {fileID: 6542884}
   - 23: {fileID: 2342884}
   - 114: {fileID: 11442884}
+  - 54: {fileID: 5473652}
   m_Layer: 0
   m_Name: Pickup
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,6 +59,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142884}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5473652
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142884}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &6542884
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -65,7 +81,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142884}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
